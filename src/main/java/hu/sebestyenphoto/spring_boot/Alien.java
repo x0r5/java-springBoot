@@ -2,16 +2,21 @@ package hu.sebestyenphoto.spring_boot;
 
 public class Alien {
 
-    private int aid;
+    private int id;
     private String name;
     private String lang;
 
-    public int getAid() {
-        return aid;
+    @Override
+    public String toString(){
+        return "Alien [id=" + id + ", name= " + name + ", lang= " + lang + "]";
     }
 
-    public void setAid(int aid) {
-        this.aid = aid;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
